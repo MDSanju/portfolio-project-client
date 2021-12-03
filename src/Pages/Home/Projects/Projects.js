@@ -12,10 +12,10 @@ const Projects = () => {
       .then((data) => setProjects(data));
   }, []);
   return (
-    <div id="projects">
+    <section id="projects">
       <div className="projects container">
         <div className="projects-header">
-          <h1 className="section-title">
+          <h1 className="section-title" style={{ marginBottom: "20px" }}>
             Recent <span>Projects</span>
           </h1>
         </div>
@@ -30,14 +30,14 @@ const Projects = () => {
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "15px",
+              marginTop: "38px",
             }}
           >
             <PuffLoader color={"crimson"} size={60} />
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

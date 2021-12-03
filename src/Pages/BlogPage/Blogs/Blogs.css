@@ -1,0 +1,18 @@
+.blog-title {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 640px) {
+    .blog-title {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 544px) {
+    .blog-title {
+        font-size: 3rem;
+    }
+}

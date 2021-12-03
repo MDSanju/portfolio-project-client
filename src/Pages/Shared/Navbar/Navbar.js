@@ -34,11 +34,11 @@ const Navbar = () => {
       <div className="header container">
         <div className="nav-bar">
           <div className="brand">
-            <a href="#hero">
-              <h1>
+            <Link to="/">
+              <h1 className="logo">
                 <span>MD</span> Sa<span>n</span>ju
               </h1>
-            </a>
+            </Link>
           </div>
           <div className="nav-list">
             <div
@@ -54,14 +54,19 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a href="#projects" data-after="Contact">
-                  Projects
-                </a>
+                <Link to="/about" data-after="About">
+                  ABOUT
+                </Link>
               </li>
               <li>
-                <a href="#contact" data-after="Contact">
-                  Contact Me
-                </a>
+                <Link to="/blogs" data-after="Blogs">
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" data-after="Contact">
+                  Contact
+                </Link>
               </li>
               {admin && (
                 <li>

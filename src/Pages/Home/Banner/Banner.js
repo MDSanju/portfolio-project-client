@@ -18,7 +18,7 @@ const Banner = () => {
             href={resume}
             download="md_sanju_resume.pdf"
             type="button"
-            className="cta"
+            className="resume-btn"
           >
             Download Resume
           </a>

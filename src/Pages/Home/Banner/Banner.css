@@ -63,6 +63,44 @@
     animation-delay: 1.5s;
 }
 
+.resume-btn {
+    display: inline-block;
+    padding: 21px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+.resume-btn:hover {
+    color: white;
+    background-color: crimson;
+}
+
+@media only screen and (max-width: 500px) {
+    #hero h1 {
+        font-size: 1.6rem;
+    }
+    .resume-btn {
+        display: inline-block;
+        padding: 14px 22px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid crimson;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-top: 30px;
+        transition: .3s ease;
+        transition-property: background-color, color;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .cta {
         font-size: 2.5rem;

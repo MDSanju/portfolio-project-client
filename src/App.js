@@ -8,6 +8,10 @@ import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import AddProject from "./Pages/AddProject/AddProject/AddProject";
 import "./App.css";
 import MakeAdmin from "./Pages/MakeAdmin/MakeAdmin";
+import ContactPage from "./Pages/ContactForm/ContactPage/ContactPage";
+import BlogPage from "./Pages/BlogPage/BlogPage/BlogPage";
+import DetailPage from "./Pages/DetailPage/DetailPage/DetailPage";
+import AboutPage from "./Pages/AboutPage/AboutPage/AboutPage";
 
 function App() {
   return (
@@ -17,7 +21,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/blogs" element={<BlogPage />} />
+            <Route path="/detail/:projectId" element={<DetailPage />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route
               path="/addProject"
               element={

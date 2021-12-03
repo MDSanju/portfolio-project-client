@@ -1,0 +1,27 @@
+#about-me-banner {
+    background-image: url(https://i.ibb.co/GnBF5Ng/816e2467390077-5b380b59094ec.png);
+    background-size: cover;
+    background-position: top center;
+    height: 280px;
+    position: relative;
+    z-index: 1;
+}
+
+#about-me-banner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#about-me-banner .about-me-banner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}

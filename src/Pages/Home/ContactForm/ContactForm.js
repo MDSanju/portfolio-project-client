@@ -33,6 +33,9 @@ const ContactForm = () => {
   return (
     <div id="contact" className="form-background">
       <div className="form-container">
+        <h2 className="contact-me-title">
+          CONTACT <span style={{ color: "crimson" }}>ME</span>
+        </h2>
         <div className="screen">
           <div className="screen-header">
             <div className="screen-header-left">

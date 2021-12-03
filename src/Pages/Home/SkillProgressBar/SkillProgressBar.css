@@ -1,0 +1,145 @@
+.skill-header-title {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 500;
+    margin-top: 125px;
+    margin-bottom: -24px;
+}
+
+.skill-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.skill-image {
+    width: 576px;
+    height: 472px;
+}
+
+.progress-bar {
+    min-height: 100vh;
+    width: 485px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-bar {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-bar-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-progress-bar {
+    height: 14px;
+    background: #e4e5e9;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 14px;
+    background: #4cd137;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #3d3d3d;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #3d3d3d;
+    color: white;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1038px) {
+    .skill-header-title {
+        margin-bottom: 0px;
+    }
+    .skill-body {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .skill-header-title {
+        font-size: 3rem;
+    }
+    .skill-body {
+        gap: 0px;
+    }
+    .skill-image {
+        width: 500px;
+        height: 420px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .skill-image {
+        width: 420px;
+        height: 380px;
+    }
+    .progress-bar {
+        width: 420px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .skill-image {
+        width: 372px;
+        height: 310px;
+    }
+    .progress-bar {
+        width: 372px;
+    }
+}
+
+@media only screen and (max-width:376px) {
+    .skill-image {
+        width: 310px;
+        height: 275px;
+    }
+    .progress-bar {
+        width: 310px;
+    }
+}

@@ -34,6 +34,10 @@
     padding: 0 10px;
 }
 
+.brand .logo {
+    font-size: 3rem;
+}
+
 #header .nav-list ul {
     list-style: none;
     position: absolute;
@@ -193,6 +197,40 @@
 
 
 /* End Keyframes */
+
+
+/* Media Query For mobile */
+
+@media only screen and (max-width: 700px) {
+    #header .nav-list ul a {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #header .nav-list ul a {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .brand .logo {
+        font-size: 2rem;
+    }
+    #header .hamburger {
+        height: 40px;
+        width: 40px;
+    }
+    #header .hamburger .bar {
+        width: 22px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #header .nav-list ul a {
+        font-size: 1.5rem;
+    }
+}
 
 
 /* Media Query For Tablet */

@@ -1,16 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import Footer from "../../Shared/Footer/Footer";
 import Navbar from "../../Shared/Navbar/Navbar";
+import About from "../About/About";
+import Address from "../Address/Address";
 import Banner from "../Banner/Banner";
-import ContactForm from "../ContactForm/ContactForm";
 import Projects from "../Projects/Projects";
+import SkillProgressBar from "../SkillProgressBar/SkillProgressBar";
 
 const Home = () => {
   return (
     <div>
+      <title>Home || MERN Stack Developer</title>
       <Navbar></Navbar>
       <Banner></Banner>
       <Projects></Projects>
-      <ContactForm></ContactForm>
+      <About></About>
+      <SkillProgressBar></SkillProgressBar>
+      <Address></Address>
+      <Footer></Footer>
     </div>
   );
 };
