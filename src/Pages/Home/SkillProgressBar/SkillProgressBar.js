@@ -6,7 +6,7 @@ const SkillProgressBar = () => {
     <div>
       <div>
         <h2 className="skill-header-title">
-          SKILLS & PR<span style={{ color: "crimson" }}>OFICIENCIES</span>
+          SKILLS & PROFI<span style={{ color: "crimson" }}>CIENCIES</span>
         </h2>
       </div>
       <div className="skill-body">

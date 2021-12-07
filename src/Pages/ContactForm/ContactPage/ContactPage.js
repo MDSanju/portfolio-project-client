@@ -10,7 +10,14 @@ const ContactPage = () => {
       <title>Contact Me || MERN Stack Developer</title>
       <Navbar></Navbar>
       <ContactBanner></ContactBanner>
+      <br />
+      <br />
+      <br />
+      <br />
       <ContactForm></ContactForm>
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />

@@ -1,0 +1,35 @@
+.project-features-container {
+    padding-top: 30px;
+}
+
+.features-project-title {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
+}
+
+.entair-project-features {
+    padding-top: 8px;
+    padding-left: 32px;
+    padding-bottom: 20px;
+    color: #959496;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+.project-detail-btn {
+    background-color: transparent;
+    border: none;
+    color: crimson;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.project-detail-btn:hover {
+    color: #b9134f;
+    text-decoration: underline;
+}

@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import "./Project.css";
 
 const Project = ({ project }) => {
-  const { _id, title, image, serial, description } = project;
+  const { _id, title, image, serial } = project;
   const navigate = useNavigate();
 
   const handleDetail = () => {
@@ -13,11 +14,18 @@ const Project = ({ project }) => {
       <div className="project-info">
         <h1>Project {serial}</h1>
         <h2>{title}</h2>
-        <p>{description}</p>
+        <div className="project-features-container">
+          <h3 className="features-project-title">Features:</h3>
+          <ol className="entair-project-features">
+            <li>Hello world!</li>
+            <li>How are you?</li>
+            <li>How you doing?</li>
+          </ol>
+        </div>
         <button
           onClick={handleDetail}
-          className="app-form-button"
-          style={{ margin: "20px 0", fontSize: "20px" }}
+          className="project-detail-btn"
+          style={{ fontSize: "20px", margin: "0" }}
         >
           Detail
         </button>
