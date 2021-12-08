@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import "./Project.css";
 
 const Project = ({ project }) => {
-  const { _id, title, image, serial } = project;
+  const { _id, title, image, serial, feature1, feature2, feature3 } = project;
   const navigate = useNavigate();
 
   const handleDetail = () => {
@@ -17,9 +17,9 @@ const Project = ({ project }) => {
         <div className="project-features-container">
           <h3 className="features-project-title">Features:</h3>
           <ol className="entair-project-features">
-            <li>Hello world!</li>
-            <li>How are you?</li>
-            <li>How you doing?</li>
+            <li>{feature1}</li>
+            <li>{feature2}</li>
+            <li>{feature3}</li>
           </ol>
         </div>
         <button

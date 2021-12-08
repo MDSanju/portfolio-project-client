@@ -31,7 +31,7 @@ const AddProject = () => {
   };
 
   return (
-    <div style={{ marginTop: "10vh" }}>
+    <div style={{ marginTop: "10vh", marginBottom: "8vh" }}>
       <h2
         style={{ textAlign: "center", fontSize: "36px", marginBottom: "25px" }}
       >
@@ -67,6 +67,84 @@ const AddProject = () => {
           <br />
           <input
             type="text"
+            placeholder="Screenshot 01"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("screenshot1")}
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Screenshot 02"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("screenshot2")}
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Screenshot 03"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("screenshot3")}
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Screenshot 04"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("screenshot4")}
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Screenshot 05"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("screenshot5")}
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Screenshot 06"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("screenshot6")}
+          />
+          <br />
+          <input
+            type="text"
             placeholder="Project Serial No."
             required
             style={{
@@ -78,17 +156,113 @@ const AddProject = () => {
             {...register("serial")}
           />
           <br />
-          <textarea
+          <input
             type="text"
+            placeholder="Feature 01"
+            required
             style={{
               width: "100%",
-              height: "100px",
-              marginBottom: "26px",
+              height: "25px",
+              marginBottom: "16px",
               padding: "15px",
             }}
-            placeholder="Description..."
+            {...register("feature1")}
+          />
+          <input
+            type="text"
+            placeholder="Feature 02"
             required
-            {...register("description")}
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("feature2")}
+          />
+          <input
+            type="text"
+            placeholder="Feature 03"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("feature3")}
+          />
+          <input
+            type="text"
+            placeholder="Feature 04"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("feature4")}
+          />
+          <input
+            type="text"
+            placeholder="Feature 05"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("feature5")}
+          />
+          <input
+            type="text"
+            placeholder="TECHNOLOGIES"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("technologies")}
+          />
+          <input
+            type="text"
+            placeholder="Live Website Link"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("website_link")}
+          />
+          <input
+            type="text"
+            placeholder="Client Side Code Link"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("client_code")}
+          />
+          <input
+            type="text"
+            placeholder="Server Side Code Link"
+            required
+            style={{
+              width: "100%",
+              height: "25px",
+              marginBottom: "16px",
+              padding: "15px",
+            }}
+            {...register("server_code")}
           />
           <br />
           <input

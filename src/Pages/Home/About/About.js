@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../../finalResume.pdf";
+import resume from "../../../MERN_Stack_Developer_Resume.pdf";
 import "./About.css";
 
 const About = () => {
