@@ -18,6 +18,7 @@ const Screenshot1 = () => {
 
   return (
     <>
+      <title>Screenshot 01 || MERN Stack Developer</title>
       <Navbar></Navbar>
       <ScreenshotBanner></ScreenshotBanner>
 

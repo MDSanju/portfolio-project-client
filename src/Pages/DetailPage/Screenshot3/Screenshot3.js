@@ -15,6 +15,7 @@ const Screenshot3 = () => {
   }, [projectId]);
   return (
     <>
+      <title>Screenshot 03 || MERN Stack Developer</title>
       <Navbar></Navbar>
       <ScreenshotBanner></ScreenshotBanner>
 
