@@ -3,7 +3,6 @@ import { useParams } from "react-router";
 import Footer from "../../Shared/Footer/Footer";
 import Navbar from "../../Shared/Navbar/Navbar";
 import ScreenshotBanner from "../ScreenshotBanner/ScreenshotBanner";
-import PuffLoader from "react-spinners/PuffLoader";
 import "./Screenshot1.css";
 
 const Screenshot1 = () => {
