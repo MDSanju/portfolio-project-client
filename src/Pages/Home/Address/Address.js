@@ -6,7 +6,7 @@ const Address = () => {
     <section id="contact">
       <div className="contact container">
         <div>
-          <h1 className="section-title" style={{ marginTop: "65px" }}>
+          <h1 className="section-title">
             Contact <span>info</span>
           </h1>
         </div>

@@ -3,14 +3,13 @@
     font-size: 6rem;
     font-weight: 500;
     margin-top: 125px;
-    margin-bottom: -24px;
+    margin-bottom: 40px;
 }
 
 .skill-body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 36px;
 }
 
@@ -23,7 +22,6 @@
     min-height: 100vh;
     width: 485px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -96,8 +94,9 @@
     }
     .skill-body {
         display: flex;
+        align-items: center;
         flex-direction: column;
-        gap: 0px;
+        gap: 60px;
     }
 }
 
@@ -106,7 +105,7 @@
         font-size: 3rem;
     }
     .skill-body {
-        gap: 0px;
+        gap: 60px;
     }
     .skill-image {
         width: 500px;
