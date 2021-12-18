@@ -15,7 +15,7 @@ const Projects = () => {
     <section id="projects">
       <div className="projects container">
         <div className="projects-header">
-          <h1 className="section-title" style={{ marginBottom: "20px" }}>
+          <h1 className="section-title" style={{ marginBottom: "50px" }}>
             Recent <span>Projects</span>
           </h1>
         </div>
