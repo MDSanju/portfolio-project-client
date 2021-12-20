@@ -7,6 +7,26 @@ const Detail = () => {
   const { projectId } = useParams();
   const [project, setProject] = useState({});
 
+
+  const port1 = {
+    backgroundImage: `url(${project.screenshot1})`,
+  };
+  const port2 = {
+    backgroundImage: `url(${project.screenshot2})`,
+  };
+  const port3 = {
+    backgroundImage: `url(${project.screenshot3})`,
+  };
+  const port4 = {
+    backgroundImage: `url(${project.screenshot4})`,
+  };
+  const port5 = {
+    backgroundImage: `url(${project.screenshot5})`,
+  };
+  const port6 = {
+    backgroundImage: `url(${project.screenshot6})`,
+  };
+
   useEffect(() => {
     fetch(`https://quiet-shelf-64321.herokuapp.com/projects/${projectId}`)
       .then((res) => res.json())
@@ -76,33 +96,80 @@ const Detail = () => {
             </div>
           </div>
         </div>
-        <h1
-          className="blog-title"
-          style={{ marginTop: "175px", marginBottom: "35px" }}
-        >
-          PROJECT <span style={{ color: "crimson" }}>SCREENSHOTS</span>
-        </h1>
-        <div className={styles.gallery}>
-          <Link to={`/screenshot1/${project._id}`} className={styles.imgLink}>
-            <img src={project.screenshot1} alt="" />
-          </Link>
-          <Link to={`/screenshot2/${project._id}`} className={styles.imgLink}>
-            <img src={project.screenshot2} alt="" />
-          </Link>
-          <Link to={`/screenshot3/${project._id}`} className={styles.imgLink}>
-            <img src={project.screenshot3} alt="" />
-          </Link>
-          <Link to={`/screenshot4/${project._id}`} className={styles.imgLink}>
-            <img src={project.screenshot4} alt="" />
-          </Link>
-          <Link to={`/screenshot5/${project._id}`} className={styles.imgLink}>
-            <img src={project.screenshot5} alt="" />
-          </Link>
-          <Link to={`/screenshot6/${project._id}`} className={styles.imgLink}>
-            <img src={project.screenshot6} alt="" />
-          </Link>
-        </div>
       </div>
+      <section className={styles.portfolio}>
+        <div className={styles.portfolioHeader}>
+          <h3>
+            PROJECT <span style={{ color: "crimson" }}>SCREENSHOTS</span>
+          </h3>
+        </div>
+
+        <div className={styles.firstRow}>
+          <div className={styles.port1} style={port1}>
+            <div className={styles.overlay}>
+              <Link
+                to={`/screenshot1/${project._id}`}
+                className={styles.linkOfImg}
+              >
+                See Big
+              </Link>
+            </div>
+          </div>
+          <div className={styles.port2} style={port2}>
+            <div className={styles.overlay}>
+              <Link
+                to={`/screenshot2/${project._id}`}
+                className={styles.linkOfImg}
+              >
+                See Big
+              </Link>
+            </div>
+          </div>
+          <div className={styles.port3} style={port3}>
+            <div className={styles.overlay}>
+              <Link
+                to={`/screenshot3/${project._id}`}
+                className={styles.linkOfImg}
+              >
+                See Big
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.secondRow}>
+          <div className={styles.port4} style={port4}>
+            <div className={styles.overlay}>
+              <Link
+                to={`/screenshot4/${project._id}`}
+                className={styles.linkOfImg}
+              >
+                See Big
+              </Link>
+            </div>
+          </div>
+          <div className={styles.port5} style={port5}>
+            <div className={styles.overlay}>
+              <Link
+                to={`/screenshot5/${project._id}`}
+                className={styles.linkOfImg}
+              >
+                See Big
+              </Link>
+            </div>
+          </div>
+          <div className={styles.port6} style={port6}>
+            <div className={styles.overlay}>
+              <Link
+                to={`/screenshot6/${project._id}`}
+                className={styles.linkOfImg}
+              >
+                See Big
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -123,6 +123,231 @@
     background-image: linear-gradient(to right, rgb(53, 53, 53) 0%, rgb(36, 33, 33) 100%);
 }
 
+
+/* Portfolio Section Starts Here*/
+
+section.portfolio {
+    padding: 20px;
+    margin-top: 135px;
+}
+
+.portfolioHeader {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.portfolioHeader:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 36px;
+    width: 35%;
+    height: 1px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    background-color: #000000;
+}
+
+.portfolioHeader:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 36px;
+    width: 35%;
+    height: 1px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    background-color: #000000;
+}
+
+.portfolioHeader h3 {
+    font-size: 26px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.firstRow {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.port1 {
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 5%;
+    position: relative;
+    transition: .5s;
+}
+
+.port2 {
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 5%;
+    position: relative;
+    transition: .5s;
+}
+
+.port3 {
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    transition: .5s;
+}
+
+.secondRow {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.port4 {
+    height: 300px;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 5%;
+    position: relative;
+    transition: .5s;
+}
+
+.port5 {
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 5%;
+    position: relative;
+    transition: .5s;
+}
+
+.port6 {
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    transition: .5s;
+}
+
+.overlay {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    background-color: transparent;
+    color: transparent;
+    width: 100%;
+    height: 75px;
+}
+
+.overlay h3,
+.overlay p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.linkOfImg {
+    display: flex;
+    justify-content: center;
+    color: transparent;
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding-top: 27px;
+    text-decoration: underline;
+}
+
+.port1:hover .overlay .linkOfImg,
+.port2:hover .overlay .linkOfImg,
+.port3:hover .overlay .linkOfImg,
+.port4:hover .overlay .linkOfImg,
+.port5:hover .overlay .linkOfImg,
+.port6:hover .overlay .linkOfImg {
+    color: #BA0000;
+    transition: .5s;
+}
+
+.overlay p {
+    text-align: center;
+    padding-top: 10px;
+    color: transparent;
+}
+
+.port1:hover .overlay,
+.port2:hover .overlay,
+.port3:hover .overlay,
+.port4:hover .overlay,
+.port5:hover .overlay,
+.port6:hover .overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    top: 225px;
+    transition: .5s;
+}
+
+.port1:hover .overlay p,
+.port2:hover .overlay p,
+.port3:hover .overlay p,
+.port4:hover .overlay p,
+.port5:hover .overlay p,
+.port6:hover .overlay p {
+    color: #000000;
+    transition: .5s;
+}
+
+.port1:hover,
+.port2:hover,
+.port3:hover,
+.port4:hover,
+.port5:hover,
+.port6:hover {
+    background-size: 150% 150%;
+}
+
+
+/* Portfolio Section Ends Here*/
+
+@media screen and (max-width: 1500px) {
+    .portfolioHeader:before,
+    .portfolioHeader:after {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .portfolioHeader:before,
+    .portfolioHeader:after {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .portfolioHeader:before,
+    .portfolioHeader:after {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .portfolioHeader:before,
+    .portfolioHeader:after {
+        width: 27%;
+    }
+}
+
 @media screen and (max-width: 1068px) {
     .project_detail_info {
         max-width: 80rem;
@@ -133,9 +358,59 @@
     }
 }
 
+@media screen and (max-width: 1055px) {
+    .portfolioHeader:before,
+    .portfolioHeader:after {
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .portfolioHeader:before,
+    .portfolioHeader:after {
+        width: 25%;
+    }
+    .firstRow,
+    .secondRow {
+        display: block;
+    }
+    .overlay {
+        top: 400px;
+        height: 100px;
+    }
+    .port1:hover .overlay,
+    .port2:hover .overlay,
+    .port3:hover .overlay,
+    .port4:hover .overlay,
+    .port5:hover .overlay,
+    .port6:hover .overlay {
+        top: 380px;
+    }
+    .linkOfImg {
+        font-size: 2.2rem;
+        padding-top: 35px;
+    }
+    .port1,
+    .port2,
+    .port3,
+    .port4,
+    .port5,
+    .port6 {
+        width: 80%;
+        margin: auto;
+        height: 480px;
+        margin-bottom: 60px;
+    }
+}
+
 @media screen and (max-width: 868px) {
     .project_detail_info {
         max-width: 70rem;
+    }
+    .portfolioHeader:before,
+    .portfolioHeader:after {
+        width: 100%;
+        top: 50px;
     }
 }
 
@@ -148,5 +423,175 @@
         min-width: 100%;
         max-width: 100%;
         transform: translate(0, -8rem);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .firstRow,
+    .secondRow {
+        display: block;
+    }
+    .overlay {
+        top: 355px;
+        height: 70px;
+    }
+    .port1:hover .overlay,
+    .port2:hover .overlay,
+    .port3:hover .overlay,
+    .port4:hover .overlay,
+    .port5:hover .overlay,
+    .port6:hover .overlay {
+        top: 330px;
+    }
+    .linkOfImg {
+        font-size: 1.8rem;
+        padding-top: 22px;
+    }
+    .port1,
+    .port2,
+    .port3,
+    .port4,
+    .port5,
+    .port6 {
+        width: 80%;
+        margin: auto;
+        height: 400px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .firstRow,
+    .secondRow {
+        display: block;
+    }
+    .overlay {
+        top: 255px;
+        height: 70px;
+    }
+    .port1:hover .overlay,
+    .port2:hover .overlay,
+    .port3:hover .overlay,
+    .port4:hover .overlay,
+    .port5:hover .overlay,
+    .port6:hover .overlay {
+        top: 230px;
+    }
+    .linkOfImg {
+        font-size: 1.7rem;
+        padding-top: 24px;
+    }
+    .port1,
+    .port2,
+    .port3,
+    .port4,
+    .port5,
+    .port6 {
+        width: 88%;
+        margin: auto;
+        height: 300px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .firstRow,
+    .secondRow {
+        display: block;
+    }
+    .overlay {
+        top: 235px;
+        height: 60px;
+    }
+    .port1:hover .overlay,
+    .port2:hover .overlay,
+    .port3:hover .overlay,
+    .port4:hover .overlay,
+    .port5:hover .overlay,
+    .port6:hover .overlay {
+        top: 210px;
+    }
+    .linkOfImg {
+        font-size: 1.5rem;
+        padding-top: 18px;
+    }
+    .port1,
+    .port2,
+    .port3,
+    .port4,
+    .port5,
+    .port6 {
+        width: 90%;
+        margin: auto;
+        height: 270px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .firstRow,
+    .secondRow {
+        display: block;
+    }
+    .overlay {
+        top: 215px;
+        height: 55px;
+    }
+    .port1:hover .overlay,
+    .port2:hover .overlay,
+    .port3:hover .overlay,
+    .port4:hover .overlay,
+    .port5:hover .overlay,
+    .port6:hover .overlay {
+        top: 195px;
+    }
+    .linkOfImg {
+        font-size: 1.4rem;
+        padding-top: 17px;
+    }
+    .port1,
+    .port2,
+    .port3,
+    .port4,
+    .port5,
+    .port6 {
+        width: 95%;
+        margin: auto;
+        height: 250px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .firstRow,
+    .secondRow {
+        display: block;
+    }
+    .overlay {
+        top: 188px;
+        height: 48px;
+    }
+    .port1:hover .overlay,
+    .port2:hover .overlay,
+    .port3:hover .overlay,
+    .port4:hover .overlay,
+    .port5:hover .overlay,
+    .port6:hover .overlay {
+        top: 172px;
+    }
+    .linkOfImg {
+        font-size: 1.3rem;
+        padding-top: 14px;
+    }
+    .port1,
+    .port2,
+    .port3,
+    .port4,
+    .port5,
+    .port6 {
+        width: 96%;
+        margin: auto;
+        height: 220px;
+        margin-bottom: 60px;
     }
 }
