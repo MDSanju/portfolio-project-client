@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
           <div className="social-item">
             <a href="https://twitter.com/MERN_Stack_Dev">
-              <img src="https://img.icons8.com/bubbles/100/000000/twitter.png" />
+              <img src="https://img.icons8.com/bubbles/344/twitter-circled.png" />
             </a>
           </div>
           <div className="social-item">
