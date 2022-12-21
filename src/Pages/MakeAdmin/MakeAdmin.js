@@ -7,7 +7,7 @@ const MakeAdmin = () => {
     const proceed = window.confirm("Please confirm to Make user to Admin!");
     if (proceed) {
       const user = data;
-      fetch("https://quiet-shelf-64321.herokuapp.com/users/admin", {
+      fetch("https://portfolio-project-server.onrender.com/users/admin", {
         method: "PUT",
         headers: {
           "content-type": "application/json",

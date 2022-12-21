@@ -7,7 +7,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("https://quiet-shelf-64321.herokuapp.com/projects")
+    fetch("https://portfolio-project-server.onrender.com/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);

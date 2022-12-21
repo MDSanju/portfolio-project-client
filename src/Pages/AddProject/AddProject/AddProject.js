@@ -13,7 +13,7 @@ const AddProject = () => {
   const onSubmit = (data) => {
     const proceed = window.confirm("Please confirm to Add!");
     if (proceed) {
-      fetch("https://quiet-shelf-64321.herokuapp.com/projects", {
+      fetch("https://portfolio-project-server.onrender.com/projects", {
         method: "POST",
         headers: {
           "content-type": "application/json",

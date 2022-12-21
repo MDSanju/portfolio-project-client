@@ -9,7 +9,7 @@ const Screenshot5 = () => {
   const [screenshot, setScreenshot] = useState({});
 
   useEffect(() => {
-    fetch(`https://quiet-shelf-64321.herokuapp.com/projects/${projectId}`)
+    fetch(`https://portfolio-project-server.onrender.com/projects/${projectId}`)
       .then((res) => res.json())
       .then((data) => setScreenshot(data));
   }, [projectId]);

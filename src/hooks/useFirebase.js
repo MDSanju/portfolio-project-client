@@ -67,7 +67,7 @@ const useFirebase = () => {
 
   const upsertUserToDb = (email, displayName) => {
     const user = { email, displayName };
-    fetch("https://quiet-shelf-64321.herokuapp.com/users", {
+    fetch("https://portfolio-project-server.onrender.com/users", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -78,7 +78,7 @@ const useFirebase = () => {
 
   // Admin select
   useEffect(() => {
-    fetch(`https://quiet-shelf-64321.herokuapp.com/users/${user.email}`)
+    fetch(`https://portfolio-project-server.onrender.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
